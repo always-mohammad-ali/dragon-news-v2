@@ -1,12 +1,14 @@
 
+import { Router } from 'react-router'
 import './App.css'
+import HomeLayout from './layouts/HomeLayout'
 
 function App() {
 
 
   return (
     <>
-      <h1 className='text-3xl'>hello</h1>
+     
     
     </>
   )
