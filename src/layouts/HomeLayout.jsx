@@ -1,11 +1,20 @@
 import React from 'react';
-import Header from '../components/Header';
+import Header from '../components/Header/Header';
+import LatestNews from '../components/LatestNews/LatestNews';
+
 
 const HomeLayout = () => {
     return (
         <div>
               <header>
-                <Header></Header>
+                {/* HEADER PART */}
+                  <Header></Header>
+                
+                {/* LATEST NEWS PART */}
+                <LatestNews></LatestNews>
+
+
+
                </header>
           <main>
                 <aside className='leftAside'>
