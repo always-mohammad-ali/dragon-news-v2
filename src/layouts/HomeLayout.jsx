@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/Header/Header';
 import LatestNews from '../components/LatestNews/LatestNews';
+import Navbar from '../components/Navbar/Navbar';
 
 
 const HomeLayout = () => {
@@ -12,6 +13,9 @@ const HomeLayout = () => {
                 
                 {/* LATEST NEWS PART */}
                 <LatestNews></LatestNews>
+
+                {/* NAVBAR SECTION */}
+                <Navbar></Navbar>
 
 
 
