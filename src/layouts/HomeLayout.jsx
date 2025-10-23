@@ -2,6 +2,9 @@ import React from 'react';
 import Header from '../components/Header/Header';
 import LatestNews from '../components/LatestNews/LatestNews';
 import Navbar from '../components/Navbar/Navbar';
+import LeftAside from '../components/HomeLayout/LeftAside';
+import { Outlet } from 'react-router';
+import RightAside from '../components/HomeLayout/RightAside';
 
 
 const HomeLayout = () => {
@@ -20,17 +23,17 @@ const HomeLayout = () => {
 
 
                </header>
-          <main>
-                <aside className='leftAside'>
-
+          <main className='w-11/12 mx-auto grid grid-cols-12 border-blue-400 border-2 my-10'>
+                <aside className='leftAside col-span-3 border-2 border-amber-300'>
+                    <LeftAside></LeftAside>
                 </aside>
 
-                <section className='main'>
-
+                <section className='col-span-6 border-2 border-red-200 '>
+                     <Outlet></Outlet>
                 </section>
 
-                <aside className='rightAside'>
-
+                <aside className='col-span-3 border-2 border-amber-500'>
+                     <RightAside></RightAside>
                 </aside>
           </main>
 

@@ -10,7 +10,7 @@ const Navbar = () => {
             </div>
 
             <div className='flex flex-row gap-5'>
-                 <Link to='/home'>Home</Link>
+                 <Link to='/'>Home</Link>
                  <Link to='/about'>About</Link>
                  <Link to='/career'>Career</Link>
             </div>
